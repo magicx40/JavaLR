@@ -1,0 +1,21 @@
+package hanBlog;
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+
+public class Js {
+
+	public static void main(String[] args) {
+		File file1 = new File("./line.json");
+		File f1 = file1.getAbsoluteFile();
+		try {
+			FileUtils.readFileToString(f1);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

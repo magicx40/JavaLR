@@ -1,0 +1,24 @@
+package hanBlog;
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+
+public class Js {
+
+	public static void main(String[] args) {
+		
+		
+	}
+	
+	public void readJson() {
+		File f1 = new File(this.getClass().getResource("line.json").getPath());
+		try {
+			String f1Str = FileUtils.readFileToString(f1);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

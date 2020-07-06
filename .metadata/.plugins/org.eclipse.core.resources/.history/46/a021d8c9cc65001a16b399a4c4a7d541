@@ -1,0 +1,32 @@
+package hanBlog;
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
+
+import org.apache.commons.io.FileUtils;
+
+public class Js {
+
+	public static void main(String[] args) {
+		Js js = new Js();
+		js.readJson();
+		
+	}
+	
+	public void readJson() {
+//		File file = new File("line.json");
+		URL u = this.getClass().getResource("line.json");
+//		System.out.println(u.getPath());
+		File f = new File(u.getPath());
+		System.out.println(f.toString());
+		try {
+//			String jsonString = FileUtils.readFileToString(f.toString());
+//			System.out.println(jsonString);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

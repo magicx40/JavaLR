@@ -1,0 +1,31 @@
+内部类
+成员内部类
+局部内部类
+    匿名内部类 是局部内部类的特殊形式
+
+public class Outer {
+    public void method() {
+       /* new Inter() {
+            @Override
+            public void show() {
+                System.out.println("匿名内部类")
+            }
+        } */
+
+        new Inter() {
+           @Override
+           public void show() {
+                System.out.println("匿名内部类")
+           }
+        }.show();
+
+        Inter i = new Inter() {
+           @Override
+           public void show() {
+                System.out.println("匿名内部类")
+           }
+        }
+
+        i.show();
+    }
+}
